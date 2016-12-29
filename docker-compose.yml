@@ -1,10 +1,19 @@
 # create a docker-compose.yml file
+# creates nodejs and mongo container
+# creates python image
+
 web:
   build: .
   volumes:
     - ./:/app
   ports:
     - "3000:3000"
+  links:
+    - mongo
+automation:
+  build: ./python_code
+  volumes:
+    - ./python_code:/automation
   links:
     - mongo
 mongo:

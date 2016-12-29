@@ -1,0 +1,5 @@
+
+// Docker command to initiate with python image:
+// Image contains pymongo, python and pip installed
+
+docker run -it -v /Users/anupam/docker-node-mongodb/python_code:/automation dockernodemongodb_automation /bin/bash
