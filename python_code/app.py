@@ -1,7 +1,10 @@
-## Automation starter
+from pymongo import MongoClient
+client = MongoClient('mongodb://mongo:27017/')
 
-print "testing container"
+# Set db connection
+db = client['myproject']
 
-print "OKKKKKKKKKKK	"
+Col = db.my_coll.find()
 
-### New Line
+for i in Col:
+	print i

@@ -3,3 +3,9 @@
 // Image contains pymongo, python and pip installed
 
 docker run -it -v /Users/anupam/docker-node-mongodb/python_code:/automation dockernodemongodb_automation /bin/bash
+
+
+// To Keep on running the python container do the following:
+
+// Put the below line in DockerFile
+CMD python app.py && tail -F /var/log/apt/history.log
