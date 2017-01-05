@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 
 COPY . /automation
 
-CMD python app.py && tail -F /var/log/apt/history.log
+CMD tail -F /var/log/apt/history.log
