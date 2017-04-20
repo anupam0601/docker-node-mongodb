@@ -69,6 +69,8 @@ class Logger(object):
         
 
         self.logger = logger
+        self.info = logger.info
+        self.debug = logger.debug 
         self.dateTag = dateTag
         self.filehandler = filehandler
         self.consolehandler = consolehandler
@@ -83,5 +85,5 @@ class Logger(object):
 if __name__ == '__main__':
 
     log = Logger()
-    log.debug("anupam")
-    log.info("debnath")
+    log.info("anupam")
+   #  log.info("debnath")
