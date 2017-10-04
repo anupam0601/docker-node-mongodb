@@ -11,6 +11,6 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = /usr/local/bin/docker.build("getintodevops/hellonode")
+        app = docker.build("docker-jenkins-test")
     }
 }
